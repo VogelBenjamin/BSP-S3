@@ -1,0 +1,55 @@
+test #50
+
+real	0m3.475s
+user	0m3.448s
+sys	0m0.891s
+No model_reference defined 
+model_reference set to 'rsvm_model'
+0.696078431372549
+test #100
+
+real	0m9.736s
+user	0m9.201s
+sys	0m0.914s
+No model_reference defined 
+model_reference set to 'rsvm_model'
+0.7079207920792079
+test #150
+
+real	1m50.403s
+user	1m42.146s
+sys	0m0.905s
+No model_reference defined 
+model_reference set to 'rsvm_model'
+0.6887417218543046
+test #200
+
+real	3m29.744s
+user	3m13.934s
+sys	0m0.803s
+No model_reference defined 
+model_reference set to 'rsvm_model'
+0.753731343283582
+test #250
+Traceback (most recent call last):
+  File "/home/avis/BICS/Semester3/BSP3/ML/project_src/rsvm.py", line 14, in <module>
+    main(sys.argv[1:])
+  File "/home/avis/BICS/Semester3/BSP3/ML/project_src/rsvm.py", line 11, in main
+    agu.delegate_task(model_manager, data_ref)
+  File "/home/avis/BICS/Semester3/BSP3/ML/project_src/argument_Processing.py", line 49, in delegate_task
+    self.initiate_training(model_manager)
+  File "/home/avis/BICS/Semester3/BSP3/ML/project_src/argument_Processing.py", line 86, in initiate_training
+    m_m.train_models()
+  File "/home/avis/BICS/Semester3/BSP3/ML/project_src/model_Managing.py", line 33, in train_models
+    curr_SVM.train()
+  File "/home/avis/BICS/Semester3/BSP3/ML/project_src/SVM_Model.py", line 74, in train
+    numChanged += self.examineExample(idx)
+  File "/home/avis/BICS/Semester3/BSP3/ML/project_src/SVM_Model.py", line 150, in examineExample
+    if self.coordinateDescent(i1,i2):
+  File "/home/avis/BICS/Semester3/BSP3/ML/project_src/SVM_Model.py", line 222, in coordinateDescent
+    k12 = self.kernel(X1,self.X[i2])
+  File "/home/avis/BICS/Semester3/BSP3/ML/project_src/SVM_Model.py", line 302, in gaussian_kernel
+    return np.exp(-sigma*np.linalg.norm(x1-x2)**2)
+  File "/home/avis/.local/lib/python3.10/site-packages/numpy/linalg/linalg.py", line 2379, in _norm_dispatcher
+    def _norm_dispatcher(x, ord=None, axis=None, keepdims=None):
+KeyboardInterrupt
