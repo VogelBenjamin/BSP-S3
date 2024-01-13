@@ -23,3 +23,5 @@ When making predictions the program is going to output a file called 'model_name
 ```
 python3 rsvm.py -p testIris.csv
 ```
+
+**Note the alphabet data set can be downloaded at https://www.kaggle.com/datasets/thomasqazwsxedc/alphabet-characters-fonts-dataset/data However this models performance is not good enough to make proper predictiosn with this data yet**
